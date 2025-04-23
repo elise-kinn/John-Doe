@@ -1,0 +1,190 @@
+:root{
+    --blue : #011826;
+    --yellow: #FF9A16;
+    --white : #F7FFF2;
+    --red :#E7174A;
+    --green : #2CC1AA;
+}
+
+*{
+    margin : 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color : var(--white); 
+    font-family: "Raleway", sans-serif;
+    transition : all 0.2s ease;
+}
+
+html{
+    background-color: var(--blue);
+}
+
+main{
+    max-width: 1470px;
+    margin : 0 auto;
+    padding : 0 15px;
+    margin-top: 75px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%
+}
+
+h1, h2, h3, footer{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom : 55px
+}
+
+h3{
+    font-size: 21px;
+}
+
+label{
+    background-color: var(--yellow);
+    font-weight: 600;
+    padding :6px 10px;
+
+    &:hover{
+        background-color: var(--red);
+    }
+}
+
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding : 0 15px;
+    max-width : 1470px; 
+    margin : 0 auto; 
+    padding-top : 15px; 
+    align-items: center;
+}   
+
+header img{
+    width : 180px
+}
+
+nav ul{
+    display: flex;
+    gap : 42px; 
+}
+
+header nav a{
+    color : var(--yellow); 
+    
+    &:hover{
+        color : var(--red)
+    }
+}
+
+#red-nav{
+    color : var(--red)
+}
+
+/* section 1 */
+
+#section-1{
+    display: flex;
+    gap : 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+#section-1 img{
+    width : calc(50% - 30px)
+}
+
+#section-1 p{
+    font-size: 18px;
+    margin-bottom : 15px; 
+    margin-top : 15px
+}
+
+#section-1 label{
+    margin-top : 20px
+}
+
+
+/* section 2 */
+
+#section-formation article{
+    max-width: 1140px;
+    margin : 0 auto; 
+    position: relative;
+    margin-bottom : 100px
+}
+
+#section-formation img{
+    width: 798px;
+    height: 798px;
+}
+
+#formation-div-2 img{
+    margin-right : 0
+}
+
+
+.yellow-background-div{
+    background-color: var(--yellow);
+    max-width: 440px;
+    padding : 35px; 
+    position: absolute;
+}
+
+#formation-div-1 div{
+    right: 0px;
+    top: 180px;
+}
+
+#formation-div-2 div{
+    right: 0px;
+    top: 180px;
+}
+
+.yellow-background-div h3, .yellow-background-div p{
+    margin-bottom : 20px
+}
+
+.yellow-background-div a{
+    border : 1px var(--white) solid;
+    background-color: var(--blue);
+    padding : 10px 0; 
+    display: block;
+    width : 150px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom : -20px;
+    right: 138px;
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: var(--green);
+    text-align: center;
+    padding : 13px;
+}
