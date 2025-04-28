@@ -150,8 +150,9 @@ nav ul a, nav ul label{
     color : var(--red);
 }
 
-#anim-1{
+#anim-1, #titre-rouge, #projet-container{
     animation: navAnim-1 0.9s ease;
+    position: relative;
 }
 
 #anim-2{
@@ -322,10 +323,11 @@ nav ul a, nav ul label{
     text-align: left;
 }
 
-#section-projets a{
+#section-projets a, #projet-container a{
     background-color: var(--blue);
     border : 1px solid var(--white);
     padding: 10px 20px;
+    margin-left : 30px;
 
     &:hover{
         background-color: var(--red);
@@ -346,7 +348,7 @@ nav ul a, nav ul label{
     align-self: flex-start;
 }
 
-#section-projets article{
+#section-projets article, #projet-container article{
     border: 1px solid;
     border-image: linear-gradient(var(--red), var(--yellow)) 1 100%;
     padding : 36px 17px 0px 17px; 
@@ -362,7 +364,7 @@ nav ul a, nav ul label{
     padding : 20px 0
 }
 
-#section-projets article > div{
+#section-projets article > div, #projet-container article > div{
     position: absolute;
     background-color: var(--blue);
     padding : 6px; 
@@ -378,8 +380,6 @@ nav ul a, nav ul label{
     text-align: center;
     padding : 120px 0;
     max-width: 100vw;
-    animation: navAnim-1 0.9s ease;
-    position: relative;
 }
 
 #titre-rouge h1{
@@ -412,6 +412,25 @@ nav ul a, nav ul label{
 }
 
 
+/* page projets */
+#projet-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 50px; 
+    margin-top : 100px; 
+    margin-bottom : 80px;
+}
+
+#projet-nav{
+    display: flex;
+    gap : 25px; 
+    justify-content: center;
+    margin-bottom : 50px;
+}
+
+.yel-nav{
+    color : var(--yellow);
+}
 
 
 /* footer */
