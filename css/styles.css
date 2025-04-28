@@ -321,6 +321,7 @@ nav ul a, nav ul label{
 /* section 4 */
 #section-projets h2{
     text-align: left;
+    grid-column: 1/3;
 }
 
 #section-projets a, #projet-container a{
@@ -356,11 +357,11 @@ nav ul a, nav ul label{
     margin-bottom: 40px;
 }
 
-#section-projets img{
+#section-projets img, #projet-container img{
     height : 180px
 }
 
-#section-projets h3{
+#section-projets h3, #projet-container h3{
     padding : 20px 0
 }
 
@@ -378,7 +379,7 @@ nav ul a, nav ul label{
 #titre-rouge{
     background-color: var(--red);
     text-align: center;
-    padding : 120px 0;
+    padding : 120px 260px;
     max-width: 100vw;
 }
 
@@ -431,6 +432,8 @@ nav ul a, nav ul label{
 .yel-nav{
     color : var(--yellow);
 }
+
+/* page projets individuels */
 
 
 /* footer */
