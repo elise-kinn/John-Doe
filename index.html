@@ -21,14 +21,31 @@
             <p>Développeur Web et Web Mobile</p>
         </a>
         <nav>
-            <ul>
+            <ul class="desktop">
                 <li><a href="index.html" class="red-nav" id="anim-1">Accueil</a></li>
                 <li><a href="#" id="anim-2">Qui suis-je ?</a></li>
                 <li><a href="formation.html" id="anim-3">Ma formation</a></li>
                 <li><a href="#" id="anim-4">Mes compétences</a></li>
                 <li><a href="projets.html" id="anim-5">Mes projets</a></li>
-                <li><label id="anim-6">Contactez-moi</label></li>
+                <li>
+                    <input type="checkbox" id="contact-input-nav">
+                    <label class="contact-btn" id="anim-6" for="contact-input-nav">Contactez-moi</label>
+                    <form action="" id="contact-form-nav">
+                        <label for="contact-input-nav">X</label>
+                        <div>
+                            <h4>Me Contacter</h4>
+                            <label for="name-input">Votre nom :</label>
+                            <input type="text" placeholder="Votre Nom" id="name-input" required>
+                            <label for="mail-input">Votre email :</label>
+                            <input type="text" placeholder="Votre email" id="mail-input" required>
+                            <label for="message-input">Votre message :</label>
+                            <textarea type="text" id="message-input">Votre message</textarea>
+                            <button>Envoyer la demande</button>
+                        </div>
+                    </form>
+                </li>
             </ul>
+            <div class="tablette"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
 
@@ -44,7 +61,21 @@
                 <p>temporibus corrupti blanditiis aliquid, quod a expedita eligendi soluta libero voluptate sit, maiores consequatur minus perspiciatis perferendis porro? Consectetur, laborum quo!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias</p>
                 <p>temporibus corrupti blanditiis aliquid, quod a expedita eligendi soluta libero voluptate sit, maiores consequatur minus perspiciatis perferendis porro? Consectetur, laborum quo!</p>
-                <label>Contactez-moi</label>
+                <input type="checkbox" id="contact-input-section">
+                <label class="contact-btn" for="contact-input-section">Contactez-moi</label>
+                <form action="" id="contact-form-section">
+                    <label for="contact-input-section">X</label>
+                    <div>
+                        <h4>Me Contacter</h4>
+                        <label for="name-input">Votre nom :</label>
+                        <input type="text" placeholder="Votre Nom" id="name-input" required>
+                        <label for="mail-input">Votre email :</label>
+                        <input type="text" placeholder="Votre email" id="mail-input" required>
+                        <label for="message-input">Votre message :</label>
+                        <textarea type="text" id="message-input">Votre message</textarea>
+                        <button>Envoyer la demande</button>
+                    </div>
+                </form>
             </article>
             <img src="img/moi.png" alt="photo de moi">
         </section>
@@ -52,7 +83,7 @@
         <section id="section-formation">
             <h2>Ma formation</h2>
             <div>
-                <article id="formation-div-1">
+                <article id="formation-article-1">
                     <img src="img/dev-a-la-carte.png" alt="img décorative">
                     <div class="yellow-background-div">
                         <h3>Formation développement à la carte</h3>
@@ -64,7 +95,7 @@
                     </div>
                 </article>
 
-                <article id="formation-div-2">
+                <article id="formation-article-2">
                     <div class="yellow-background-div">
                         <h3>Formation Développeur Web et Web Mobile</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -207,7 +238,7 @@
                 <a href="vivildy.html">Lire la suite</a>
             </div>
 
-            <div>
+            <div id="last-proj-div">
                 <article>
                     <img src="img/projet3.PNG" alt="visuel du projet John Doe">
                     <h3>Portfolio de Développeur Web</h3>
