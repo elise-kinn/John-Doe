@@ -16,8 +16,12 @@
     list-style: none;
 }
 
-.tablette{
+.nav-links{
     display: none;
+}
+
+.active{
+    display: flex;
 }
 
 html{
@@ -131,6 +135,11 @@ header{
 
 header img{
     width : 180px
+}
+
+nav{
+    display: flex;
+    gap : 15px
 }
 
 nav ul{
@@ -552,11 +561,7 @@ input[type="checkbox"]{
 
 /* breakpoint nav */
 @media screen and (max-width : 1040px) { 
-    .tablette{
-        display: block;
-    }
-
-    .desktop{
+    .nav-links{
         display: none;
     }
 
